@@ -1,0 +1,1 @@
+# plugins-advanced-floating-content-lite
