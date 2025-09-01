@@ -155,19 +155,32 @@ class Advanced_Floating_Content_Admin {
 	public function add_meta_box() {
 		add_meta_box(
 			'advanced_floating_content_meta_box',
-			__( 'Floating Content Details', 'advanced-floating-content' ),
+			__( 'Build Your Floating Content Theme', 'advanced-floating-content' ),
 			array($this,'meta_box_print'),
 			'ct_afc'
 		);
+		add_meta_box(
+			'advanced_floating_content_design_layout_meta_box',
+			__( 'Design & Layout', 'advanced-floating-content' ),
+			array($this,'meta_box_print_design_layout'),
+			'ct_afc'
+		);
 	}
+	
+	
 	/*
 	* Prints the box content.
 	*/
 	public function meta_box_print( $post ) {
 	
 		require_once plugin_dir_path( __FILE__ ). 'views/advanced-floating-content-admin-display.php';
+		
 	}
+	public function meta_box_print_design_layout( $post ) {
 	
+		require_once plugin_dir_path( __FILE__ ). 'views/advanced-floating-content-design-layout-display.php';
+		
+	}
 	
 	/*
  	* Adds a options details for premium users.
