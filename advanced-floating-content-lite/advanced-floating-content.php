@@ -9,14 +9,14 @@
  * that starts the plugin.
  *
  * @link              http://www.codetides.com/
- * @since             1.2.7
+ * @since             1.2.8
  * @package           Advanced_Floating_Content
  *
  * @wordpress-plugin
  * Plugin Name:       Advanced Floating Content
  * Plugin URI:        http://www.codetides.com/advanced-floating-content/
  * Description:       Advanced Floating Content Plugin is an all in one plugin with easy to use controls, helps you demonstrate sticky footer or sticky header warning, imparting social networking connections. High level responsiveness and so on.
- * Version:           1.2.7
+ * Version:           1.2.8
  * Author:            Code Tides
  * Author URI:        http://www.codetides.com/
  * License:           GPL-2.0+

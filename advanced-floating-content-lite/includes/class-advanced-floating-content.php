@@ -163,10 +163,11 @@ class Advanced_Floating_Content {
         $this->loader->add_action( 'admin_init', $plugin_admin, 'initialize_floating_content_options' );
         $this->loader->add_action( 'admin_notices',$plugin_admin, 'floating_content_admin_notice' );
         $this->loader->add_filter( 'admin_footer_text', $plugin_admin, 'afc_add_credits' );
-        $this->loader->add_action( 'wp_ajax_update_remind_later',  $plugin_admin, 'update_remind_later' );
-        $this->loader->add_action( 'wp_ajax_nopriv_update_remind_later', $plugin_admin, 'update_remind_later' );
-        
-        
+		$this->loader->add_action( 'wp_ajax_update_remind_later', $plugin_admin, 'update_remind_later' );
+		$this->loader->add_action( 'wp_ajax_nopriv_update_remind_later', $plugin_admin, 'update_remind_later' );
+		$this->loader->add_action( 'wp_ajax_afc_dismiss_permanently', $plugin_admin, 'dismiss_permanently' );
+		$this->loader->add_action( 'wp_ajax_nopriv_afc_dismiss_permanently', $plugin_admin, 'dismiss_permanently' );
+		$this->loader->add_filter('plugin_action_links_advanced-floating-content-lite/advanced-floating-content.php', $plugin_admin, 'add_plugin_row_meta', 10, 2);
 	}
 
 	/**

@@ -188,7 +188,7 @@ class Advanced_Floating_Content_Admin {
 	public function add_meta_box_premium() {
 		add_meta_box(
 			'advanced_floating_content_premium_meta_box',
-			__( 'Premium Options', 'advanced-floating-content' ),
+			__( 'Explore Admin UI', 'advanced-floating-content' ),
 			array($this,'meta_box_premium_print'),
 			'ct_afc'
 		);
@@ -320,52 +320,188 @@ class Advanced_Floating_Content_Admin {
     
     
 	public function floating_content_admin_notice(){
-        $installed_date = get_option( 'ct_afc_installed_date' );
-        $checked_date  = strtotime('+1 month', $installed_date); 
-        $remind_later  = get_option( 'ct_afc_remind_later' );
-        
-      if(current_time( 'timestamp' ) > $checked_date ){ 
-            if($remind_later==1){
-                $remind_date = strtotime('+1 week', get_option( 'ct_afc_remind_date' ));
-                if(current_time( 'timestamp' ) < $remind_date){
-                    return;
-                }       
-            }
-        ?>
-        <div class="error settings-error notice is-dismissible">
-            <div class="afc_banner">
-                <div class="button_div">
-                    <a class="button" target="_blank" href="https://1.envato.market/5By11"><?php esc_html_e( 'Buy now', 'advanced-floating-content'); ?></a>                
-                </div>
-                <div class="text">
-                    <?php 
-                        $text = 'You\'ve been using <strong><a href="https://1.envato.market/5By11">Advanced Floating Content</a></strong> for a while now, and we hope you\'re happy with it. Why not upgrade to the <strong><a href="https://1.envato.market/5By11">PRO</a></strong> version?<br>';
-                        echo wp_kses( $text, array( 'br' => array(), 'a' => array( 'href' => array() ), 'strong' => array() ) );
-                    ?>                    
-                    <span><?php esc_html_e( 'Get it free support for any bugs or issues you faced regarding Advanced Floating Content', 'advanced-floating-content'); ?></span>
-                    <?php 
-                    $remind_btn = "<br><br><a href='#' class='btn_notification' id='remind_later'>".esc_html__("Remind Me Later", 'advanced-floating-content' )."</a>";
-                    echo wp_kses( $remind_btn, array( 'br' => array(), 'a' => array( 'href' => array(),'class' => array(),'id' => array(), ) ) );
-                    ?>
-                </div>
-            </div>
-        </div>
-    <?php
-        }
-    }
-    public function afc_add_credits(){
-		global $post_type;
-		if( 'ct_afc' == $post_type ){								
-			return esc_html__( 'If you likeAdvanced Floating Content ', 'advanced-floating-content' ).'<a href="https://wordpress.org/support/plugin/advanced-floating-content-lite/reviews/" target="_blank" target="_blank">'.esc_html__( 'please leave us a ★★★★★ rating', 'advanced-floating-content' ).'</a>.'.esc_html__( 'Many thanks from the Advanced Floating Content team in advance :)', 'advanced-floating-content' );
+		// Check if user permanently dismissed
+		$user_id = get_current_user_id();
+		$dismissed_permanently = get_user_meta($user_id, 'ct_afc_notice_dismissed', true);
+		
+		if ($dismissed_permanently) {
+			return;
+		}
+		
+		$installed_date = get_option('ct_afc_installed_date');
+		$checked_date = strtotime('+1 month', $installed_date); 
+		$remind_later = get_option('ct_afc_remind_later');
+		
+		// Generate nonces
+		$remind_nonce = wp_create_nonce('afc_remind_nonce');
+		$dismiss_nonce = wp_create_nonce('afc_dismiss_nonce');
+
+		if(current_time('timestamp') > $checked_date){ 
+			
+			if($remind_later == 1){
+				$remind_date = strtotime('+1 week', get_option('ct_afc_remind_date'));
+				if(current_time('timestamp') < $remind_date){
+					return;
+				}       
+			}
+			
+		?>
+		<div class="updated settings-error notice is-dismissible afc-pro-notice">
+			<div class="afc_banner">
+				<button type="button" class="notice-dismiss">
+					<span class="screen-reader-text">Dismiss this notice</span>
+				</button>
+				
+				<div class="button_div">
+					<a class="button button-primary" target="_blank" href="https://1.envato.market/5By11">
+						<?php esc_html_e('Upgrade to Pro', 'advanced-floating-content'); ?>
+					</a>                
+				</div>
+				
+				<div class="text">
+					<?php 
+						$text = 'You\'ve been using <strong>Advanced Floating Content</strong> for a while now. ';
+						$text .= 'Upgrade to <strong>PRO</strong> for 50+ premium features:';
+						echo wp_kses($text, array('strong' => array()));
+					?>
+					
+					<ul style="margin: 8px 0; padding-left: 20px; font-size: 13px; line-height: 1.6;">
+						<li><strong>Smart Tabbed Navigation</strong> – Setup 70% faster (v4.0 exclusive)</li>
+						<li><strong>WooCommerce Targeting</strong> – Increase sales by 40%+</li>
+						<li><strong>20+ Premium Animations</strong> – Professional entrance/exit effects</li>
+						<li><strong>Auto-Scheduling</strong> – Set start/end dates automatically</li>
+						<li><strong>Unlimited Floating Elements</strong> – No restrictions, any website</li>
+						<li><strong>24/7 Priority Support</strong> – Get help within hours, not days</li>
+					</ul>
+					
+					<div class="afc-notice-actions">
+						<a href="#" class="btn_notification afc-remind-later" data-nonce="<?php echo esc_attr($remind_nonce); ?>">
+							<?php esc_html_e('Remind Me Later', 'advanced-floating-content'); ?>
+						</a>
+						<span style="margin: 0 10px; color: #dcdcde;">|</span>
+						<a href="#" class="afc-dismiss-permanently" data-nonce="<?php echo esc_attr($dismiss_nonce); ?>">
+							<?php esc_html_e('Never Show Again', 'advanced-floating-content'); ?>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			// Remind later
+			$('.afc-remind-later').on('click', function(e) {
+				e.preventDefault();
+				var nonce = $(this).data('nonce');
+				
+				$.post(ajaxurl, {
+					action: 'update_remind_later',
+					nonce: nonce
+				}, function(response) {
+					if (response.success) {
+						$('.afc-pro-notice').fadeOut(300, function() {
+							$(this).remove();
+						});
+					}
+				}).fail(function() {
+					// Fallback: hide anyway
+					$('.afc-pro-notice').fadeOut(300);
+				});
+			});
+			
+			// Permanent dismiss
+			$('.afc-dismiss-permanently').on('click', function(e) {
+				e.preventDefault();
+				var nonce = $(this).data('nonce');
+				
+				$.post(ajaxurl, {
+					action: 'afc_dismiss_permanently',
+					nonce: nonce
+				}, function(response) {
+					if (response.success) {
+						$('.afc-pro-notice').fadeOut(300, function() {
+							$(this).remove();
+						});
+					}
+				}).fail(function() {
+					// Fallback: hide anyway
+					$('.afc-pro-notice').fadeOut(300);
+				});
+			});
+			
+			// WordPress default dismiss button (X)
+			$('.afc-pro-notice .notice-dismiss').on('click', function(e) {
+				e.preventDefault();
+				var nonce = '<?php echo esc_js($remind_nonce); ?>';
+				
+				// Set reminder for 30 days when X is clicked
+				$.post(ajaxurl, {
+					action: 'update_remind_later',
+					nonce: nonce,
+					days: 30
+				}, function() {
+					$('.afc-pro-notice').fadeOut(300, function() {
+						$(this).remove();
+					});
+				}).fail(function() {
+					// Fallback: hide anyway
+					$('.afc-pro-notice').fadeOut(300);
+				});
+			});
+		});
+		</script>
+		<?php
 		}
 	}
-    public function update_remind_later(){
-        
-        if(update_option('ct_afc_remind_later', '1')){
-            update_option('ct_afc_remind_date', current_time( 'timestamp' ));
-            die(1);
-        }            
-        else
-            die(0);
-    }
+
+	public function afc_add_credits(){
+		global $post_type;
+		if( 'ct_afc' == $post_type ){								
+			return esc_html__( 'If you like Advanced Floating Content ', 'advanced-floating-content' )
+				. '<a href="https://wordpress.org/support/plugin/advanced-floating-content-lite/reviews/" target="_blank">'
+				. esc_html__( 'please leave us a ★★★★★ rating', 'advanced-floating-content' )
+				. '</a>. '
+				. esc_html__( 'Many thanks from the Advanced Floating Content team in advance :)', 'advanced-floating-content' );
+		}
+	}
+
+	public function update_remind_later() {
+		// Verify nonce
+		if (!isset($_POST['nonce']) || !wp_verify_nonce($_POST['nonce'], 'afc_remind_nonce')) {
+			wp_die('Security check failed', 403);
+		}
+		
+		$days = isset($_POST['days']) ? intval($_POST['days']) : 7;
+		$remind_date = strtotime("+{$days} days", current_time('timestamp'));
+		
+		update_option('ct_afc_remind_later', '1');
+		update_option('ct_afc_remind_date', $remind_date);
+		
+		wp_send_json_success();
+	}
+
+	public function dismiss_permanently() {
+		// Verify nonce
+		if (!isset($_POST['nonce']) || !wp_verify_nonce($_POST['nonce'], 'afc_dismiss_nonce')) {
+			wp_die('Security check failed', 403);
+		}
+		
+		$user_id = get_current_user_id();
+		update_user_meta($user_id, 'ct_afc_notice_dismissed', time());
+		
+		wp_send_json_success();
+	}
+	public function add_plugin_row_meta($links, $file) {
+		if ('advanced-floating-content-lite/advanced-floating-content.php' === $file) {
+			$pro_link = sprintf(
+				'<a href="%s" target="_blank" rel="noopener noreferrer" style="color: #00a32a; font-weight: 700;" onmouseover="this.style.color=\'#008a20\';" onmouseout="this.style.color=\'#00a32a\';">%s</a>',
+				esc_url('https://1.envato.market/5By11?subId1=afc_lite_wp&subId2=afc_lite_plugins'),
+				esc_html__('Upgrade to PRO', 'advanced-floating-content')
+			);
+			
+			// Add PRO link before deactivate
+			array_splice($links, 1, 0, array('afc_pro' => $pro_link ));
+		}
+		return $links;
+	}
 }

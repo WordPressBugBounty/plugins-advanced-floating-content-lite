@@ -1,105 +1,186 @@
 === Advanced Floating Content Lite ===
 Contributors: codetides
-Tags: floating content, sticky header, sticky footer, social media sharing, responsive banner, custom HTML, sticky advertising, floating sidebar, popup, scrolling sidebar, promotional content, video embedding
+Tags: announcement bar, floating content, sticky bar, sticky header, sticky footer, floating cta, woocommerce banner, floating banner, call to action, popup alternative, responsive floating content, elementor compatible
 Requires at least: 4.0
 Tested up to: 6.8
-Stable tag: 1.2.7
+Stable tag: 1.2.8
 License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Donate link: https://codetides.com/donate/
 
-Advanced Floating Content Plugin is an all in one plugin with easy to use controls, helps you demonstrate sticky footer or header with many features.
+Create high-impact floating content that stays visible without annoying visitors. Perfect for announcements, CTAs, and promotions.
 
 == Description ==
 
-**Advanced Floating Content: The Easiest Way to Add Sticky Content, Popups, and Banners to Your Site.**
+**Stop Letting Important Messages Get Ignored — Without Annoying Popups.**  
+Keep announcements, offers, and calls-to-action visible exactly when visitors are ready to act.
 
-With over 8,000+ active installations, the Advanced Floating Content Lite plugin is the all-in-one solution for adding sticky headers, footers, social sharing buttons, and promotional banners to your website. It's easy to use and provides all the tools you need to create engaging, professional-looking floating content without touching a line of code.
+**Trusted by 8,000+ Active Installations Worldwide — Loved for Its Simplicity.** 
+Advanced Floating Content Lite makes it easy to create professional floating content that works smoothly across desktop, tablet, and mobile devices.
 
-Whether you need to display a site-wide notice, embed a video, or add a sticky social media bar, our plugin makes it effortless.
+Most visitors scroll fast and miss key messages. This plugin solves that by keeping your most important content naturally visible while users browse — clean, responsive, and lightweight.
 
-== Key Features (Lite) ==
+### 🚀 Why Advanced Floating Content Lite?
+* **2-Minute Setup** — Get your first floating content live in under 2 minutes
+* **Clean, Modern Interface** – Easy controls with no learning curve  
+* **Mobile-First & Responsive** – Looks perfect on every screen size  
+* **Lightweight & Fast** – Lightweight code that won't slow your site
+* **Flexible Use Cases** – Announcements, promotions, CTAs, videos, notices  
+* **Beginner to Pro Ready** — Simple enough for beginners, powerful for agencies
 
-* **Unlimited Floating Content:** Create as many floating elements as you need—no restrictions!
-* **HTML Codes In Your Control:** Use the WordPress editor to create custom HTML and CSS for your floating content.
-* **Video Embedding:** Easily embed videos from YouTube, Daily Motion, and Vimeo that float anywhere on your site.
-* **Social Media Sharing:** Add social media sharing icons for Facebook, Twitter, and LinkedIn with a single click.
-* **Fully Responsive:** The plugin automatically adjusts to fit any device, including mobile phones and tablets.
-* **Control Impressions:** Enable control impressions to prevent content from showing again after an end-user has closed it.
+### ✨ Perfect For:
+* **Bloggers & Creators** – Announcements, alerts, newsletter CTAs  
+* **WooCommerce Stores** – Sales notices and promotional banners  
+* **Agencies** – Reliable floating layouts for client sites  
+* **Businesses** – Important messages that must stay visible  
 
-== Get More With The Pro Version ==
+== 🔧 Key Features (Free) ==
 
-The Lite version is just the beginning. Upgrade to the Pro version to unlock powerful features that give you complete control over your floating content, allowing you to boost engagement, drive sales, and capture attention.
+* **Smart Positioning** – Fixed, absolute, or scroll-based placement  
+* **Flexible Placement** – Top, bottom, left, or right screen positions  
+* **Close Button Control** – Enable or disable instantly  
+* **Custom Width & Background** – Match your site branding  
+* **Responsive by Default** – Adapts automatically to all devices  
+* **Basic Page Targeting** – Homepage, posts, or pages
+* **Beginner-Friendly** – No coding required, works out of the box  
 
-* **Advanced Targeting:** Show content on specific pages, posts, or categories, including WooCommerce products and bbPress pages.
-* **Display Latest Posts:** Automatically display a list of your latest blog posts inside your floating content.
-* **Show WooCommerce Products:** Showcase individual products or product categories directly within a floating banner.
-* **Display Control:** Show or hide content based on screen size (width and height).
-* **Animations:** Grab attention with stunning loading and closing animations.
-* **User & IP Filtering:** Show content only to logged-in users and build an IP blacklist to exclude unwanted visitors.
-* **Scheduling:** Automatically schedule your content to start and stop at specific times.
-* **Custom CSS:** Apply custom styles for both mobile and desktop views.
-* **Sticky Elements:** Transform your floating content into a sticky header or sticky footer.
-* **Custom Close Buttons:** Use custom anchor tags to close content without a visible button.
+== 🚀 What’s New in Advanced Floating Content Pro v4.0 ==
 
-<a href="https://1.envato.market/ORRQEZ">Upgrade to the Advanced Floating Content Pro Version Now! »</a>
-<a href="https://1.envato.market/2raqDz">View a Advanced Floating Content Pro Live Demo »</a>
-<a href="https://goo.gl/UCcFXR">Compare Free Vs Pro »</a>
-<a href="https://1.envato.market/ZdQoAk">Read Pro Reviews »</a>
+The Pro version has just launched a **major redesign** with a powerful new interface and advanced features:
 
-== Installation ==
+*   **All-New Modern Dashboard:** Tabbed interface for faster, intuitive setup.
+*   **Smart Sticky Navigation:** Access all controls without endless scrolling.
+*   **Enhanced WooCommerce Integration:** Display latest, featured, or on-sale products directly in floating elements.
+*   **Advanced Targeting:** Control visibility by IP, country, scroll depth, user role, and more.
+*   **Professional Tools:** Built-in analytics, 20+ premium animations, sticky headers/footers, countdown timers, and priority support.
 
-1.  Upload `advanced-floating-content` folder to the `/wp-content/plugins/` directory.
-2.  Activate the plugin through the 'Plugins' menu in WordPress.
-3.  The activated menu can be found in the left side menubar.
-4.  Add floating content to display on your website.
+**[👉 See Full Pro Features & Screenshots](https://1.envato.market/5By11?subId1=wporg_readme_v4)**
+
+**[💳 Upgrade Now – Instant Checkout](https://1.envato.market/ORRQEZ?subId1=wporg_upgrade_v4)**
+
+**[⚖️ Compare Lite vs Pro](https://codetides.com/advanced-floating-content/lite-vs-pro/?subId1=wporg_compare_v4)**
+
+**[🎮 Try Live Demo](https://1.envato.market/2raqDz?subId1=wporg_preview_v4)**
+
+== Upgrade to Unlock 50+ Premium Features ==
+
+Take your floating content to the next level with **Advanced Floating Content PRO**:
+
+### 🎯 Smart Targeting & Display
+* Target by device, user role, scroll behavior, and location  
+* WooCommerce product & category targeting  
+* IP blacklisting & user access control  
+* Auto scheduling with start & end dates  
+
+### 💰 Conversion Boosters
+* WooCommerce floating promotions  
+* Countdown timers for urgency  
+* 20+ premium entrance & exit animations  
+* Dynamic latest posts display  
+
+### 🛠️ Advanced Controls
+* Unlimited floating elements  
+* Sticky announcement bars (header & footer)  
+* Advanced padding, border & spacing controls  
+* Separate mobile & desktop CSS  
+* Priority 24/7 support
+
+**[💳 Upgrade to Pro Now](https://1.envato.market/ORRQEZ?subId1=wporg_upgrade_v4)** | **[⚖️ Compare Lite vs. Pro](https://codetides.com/advanced-floating-content/lite-vs-pro/?subId1=wporg_compare_v4)** | **[🎮 Try Live Demo](https://1.envato.market/2raqDz?subId1=wporg_preview_v4)**
+
+== Installation == 
+
+1. Click **Install Now** from your WordPress dashboard  
+2. Activate **Advanced Floating Content Lite**  
+3. Go to **Floating Content → Add New**  
+4. Design your floating content using the visual controls  
+5. Publish and you're done  
+
+⏱️ Average setup time: **Under 2 minutes**
 
 == Frequently Asked Questions ==
 
-= Can we control floating content to display on selected pages or posts or category?
-Yes, you can control your floating content to display on selected posts, pages, categories, or custom post types by upgrading to the pro version.
+= Can I use this on multiple websites? =
+Yes. The Lite version is free and can be used on unlimited sites.
 
-= From where can we buy the pro version? Does it include free support for any issues or bugs?
-You can buy the pro version from <a href="https://1.envato.market/ORRQEZ">here</a>. Yes, it includes free support for any issues or bugs.
+= Does it work with page builders? =
+Yes. Fully compatible with Elementor, Divi, Beaver Builder, and all major page builders.
 
-= Does it need a shortcode to display on the website?
-No, this plugin does not use any shortcodes to display on websites.
+= Will it slow down my website? =
+No. The plugin is lightweight and optimized for performance.
+
+= Is it mobile-friendly? =
+Yes. All floating content automatically adapts to mobile, tablet, and desktop screens.
+
+= How do I get support? =
+Lite users can use the WordPress support forum. PRO users receive priority support.
+
+= Can I upgrade later? =
+Yes. You can upgrade anytime without losing existing content.
 
 == Screenshots ==
 
-1. Lite Version
-2. Premium Version
+1. Lite Admin Panel - Build floating content themes
+2. Layout Settings - Controls Devices to shows
+3. [PRO] WooCommerce Targeting - Product promotions
+4. [PRO] Sticky Announcement Bars - Header/Footer modes
+5. [PRO] Floating CTAs with Animations - Engaging effects
+
 
 == Changelog ==
+
+= 1.2.8 =
+* Admin UI – Complete CSS redesign for cleaner layout  
+* Notice system – Improved dismiss behavior  
+* UX improvements – Better spacing and structure  
+
+= 1.2.7 =
+* Feature – Device-based display control (desktop/mobile)
+
 = 1.2.6 =
-Fixed Bug - Fixed XSS vulnerabilities
-Fixed Bug - Add alt tags for close button to improve seo
-Fixed Bug - Typo error for Add Button
+* Security – Fixed XSS vulnerabilities  
+* SEO – Improved accessibility attributes  
+* UI – Minor text fixes  
 
 = 1.2.5 =
-Fixed Bug - Compatible with php8
+* Compatibility – PHP 8 support  
 
 = 1.2.4 =
-Fixed Bug - onClick Close Action on floating content goes to 404 url
+* Fix – Close action redirect issue  
 
 = 1.2.3 =
-Add flexibility to hide pro banner
+* Improvement – Hide pro banner option  
 
 = 1.2.2 =
-Fixed XSS vulnerabilities
+* Security – Fixed XSS vulnerabilities  
 
 = 1.2.1 =
-Fixed javascipt confliction
+* Fix – JavaScript conflicts  
 
 = 1.2 =
-Hide upgrade notification upto a month
+* Improvement – Upgrade notice delay  
 
 = 1.1 =
-fixed miner css bug
-update some php bugs
+* Bug fixes & CSS improvements  
 
 = 1.0 =
-Initial Release
+* Initial release  
 
 == Upgrade Notice ==
-Upgrade to pro version for more features.
-```
+
+Love the Lite version? Unlock the full power with **Advanced Floating Content PRO**:
+
+✓ WooCommerce targeting & product displays  
+✓ Advanced animations & scheduling  
+✓ Smart visibility rules  
+✓ Unlimited floating elements  
+✓ Priority support 
+
+[💳 Upgrade to Pro Now](https://1.envato.market/ORRQEZ?subId1=wporg_upgrade_v4) | [⚖️ Compare Lite vs. Pro](https://codetides.com/advanced-floating-content/lite-vs-pro/?subId1=wporg_compare_v4)
+
+== Get Involved ==
+
+[⭐ Leave a review](https://wordpress.org/support/plugin/advanced-floating-content-lite/reviews/)
+[💡 Suggest features](https://codetides.com/support/?subId1=wporg_readme)
+[📚 Documentation & updates](https://codetides.com/advanced-floating-content/documentations/?subId1=wporg_readme)
+
+Need help? Visit the WordPress support forum or our documentation.
