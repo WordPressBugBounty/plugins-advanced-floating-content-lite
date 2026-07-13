@@ -93,7 +93,7 @@
     </div>
     
     <div class="pro-teaser-cta">
-        <a href="https://1.envato.market/5By11?subId1=afc_lite_wp&subId2=afc_lite" target="_blank" class="button button-primary button-hero">
+        <a href="https://www.codetides.com/products/advanced-floating-content/" target="_blank" class="button button-primary button-hero">
             <span class="dashicons dashicons-arrow-right-alt"></span> Upgrade to PRO - Get All 50+ Features
         </a>
         <p class="pro-teaser-note">One-time payment • Lifetime updates • 4,400+ active installations • 4.7★ rating</p>

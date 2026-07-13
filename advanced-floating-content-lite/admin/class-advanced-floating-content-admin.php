@@ -353,7 +353,7 @@ class Advanced_Floating_Content_Admin {
 				</button>
 				
 				<div class="button_div">
-					<a class="button button-primary" target="_blank" href="https://1.envato.market/5By11">
+					<a class="button button-primary" target="_blank" href="https://codetides.com/products/advanced-floating-content/">
 						<?php esc_html_e('Upgrade to Pro', 'advanced-floating-content'); ?>
 					</a>                
 				</div>
@@ -495,7 +495,7 @@ class Advanced_Floating_Content_Admin {
 		if ('advanced-floating-content-lite/advanced-floating-content.php' === $file) {
 			$pro_link = sprintf(
 				'<a href="%s" target="_blank" rel="noopener noreferrer" style="color: #00a32a; font-weight: 700;" onmouseover="this.style.color=\'#008a20\';" onmouseout="this.style.color=\'#00a32a\';">%s</a>',
-				esc_url('https://1.envato.market/5By11?subId1=afc_lite_wp&subId2=afc_lite_plugins'),
+				esc_url('https://codetides.com/products/advanced-floating-content/'),
 				esc_html__('Upgrade to PRO', 'advanced-floating-content')
 			);
 			

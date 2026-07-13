@@ -70,7 +70,7 @@
             
             <!-- Image container -->
             <div class="lightbox-image-container">
-                <a href="https://1.envato.market/5By11?subId1=afc_lite_wp&subId2=afc_lite" target="_blank" class="lightbox-link">
+                <a href="https://www.codetides.com/products/advanced-floating-content/" target="_blank" class="lightbox-link">
                     <img class="lightbox-image" src="" alt="">
                 </a>
             </div>

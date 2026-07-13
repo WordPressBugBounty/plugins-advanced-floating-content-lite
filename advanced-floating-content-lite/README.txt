@@ -2,8 +2,8 @@
 Contributors: codetides
 Tags: announcement bar, floating content, sticky bar, sticky header, sticky footer, floating cta, woocommerce banner, floating banner, call to action, popup alternative, responsive floating content, elementor compatible
 Requires at least: 4.0
-Tested up to: 6.8
-Stable tag: 1.2.8
+Tested up to: 7.1
+Stable tag: 1.2.9
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Donate link: https://codetides.com/donate/
@@ -19,6 +19,8 @@ Keep announcements, offers, and calls-to-action visible exactly when visitors ar
 Advanced Floating Content Lite makes it easy to create professional floating content that works smoothly across desktop, tablet, and mobile devices.
 
 Most visitors scroll fast and miss key messages. This plugin solves that by keeping your most important content naturally visible while users browse — clean, responsive, and lightweight.
+
+**[👉 See Full Pro Features & Screenshots](https://www.codetides.com/products/advanced-floating-content/)** | **[💳 Upgrade Now – Instant Checkout](https://www.codetides.com/products/advanced-floating-content/)** | **[⚖️ Compare Lite vs Pro](https://codetides.com/advanced-floating-content/lite-vs-pro/?subId1=wporg_compare_v4)** | **[🎮 Try Live Demo](https://codetides.com/advanced-floating-content/)**
 
 ### 🚀 Why Advanced Floating Content Lite?
 * **2-Minute Setup** — Get your first floating content live in under 2 minutes
@@ -54,14 +56,6 @@ The Pro version has just launched a **major redesign** with a powerful new inter
 *   **Advanced Targeting:** Control visibility by IP, country, scroll depth, user role, and more.
 *   **Professional Tools:** Built-in analytics, 20+ premium animations, sticky headers/footers, countdown timers, and priority support.
 
-**[👉 See Full Pro Features & Screenshots](https://1.envato.market/5By11?subId1=wporg_readme_v4)**
-
-**[💳 Upgrade Now – Instant Checkout](https://1.envato.market/ORRQEZ?subId1=wporg_upgrade_v4)**
-
-**[⚖️ Compare Lite vs Pro](https://codetides.com/advanced-floating-content/lite-vs-pro/?subId1=wporg_compare_v4)**
-
-**[🎮 Try Live Demo](https://1.envato.market/2raqDz?subId1=wporg_preview_v4)**
-
 == Upgrade to Unlock 50+ Premium Features ==
 
 Take your floating content to the next level with **Advanced Floating Content PRO**:
@@ -85,7 +79,7 @@ Take your floating content to the next level with **Advanced Floating Content PR
 * Separate mobile & desktop CSS  
 * Priority 24/7 support
 
-**[💳 Upgrade to Pro Now](https://1.envato.market/ORRQEZ?subId1=wporg_upgrade_v4)** | **[⚖️ Compare Lite vs. Pro](https://codetides.com/advanced-floating-content/lite-vs-pro/?subId1=wporg_compare_v4)** | **[🎮 Try Live Demo](https://1.envato.market/2raqDz?subId1=wporg_preview_v4)**
+**[💳 Upgrade to Pro Now](https://www.codetides.com/products/advanced-floating-content/)** | **[⚖️ Compare Lite vs. Pro](https://codetides.com/advanced-floating-content/lite-vs-pro/?subId1=wporg_compare_v4)** | **[🎮 Try Live Demo](https://codetides.com/advanced-floating-content/)**
 
 == Installation == 
 
@@ -127,6 +121,11 @@ Yes. You can upgrade anytime without losing existing content.
 
 
 == Changelog ==
+
+= 1.2.9 =
+* Improvement — Added opt-in usage tracking for better support and feature prioritization
+* Security — Added nonce verification to admin notice dismissal handlers
+* Security — Fixed capability check in post save handler
 
 = 1.2.8 =
 * Admin UI – Complete CSS redesign for cleaner layout  
@@ -175,7 +174,7 @@ Love the Lite version? Unlock the full power with **Advanced Floating Content PR
 ✓ Unlimited floating elements  
 ✓ Priority support 
 
-[💳 Upgrade to Pro Now](https://1.envato.market/ORRQEZ?subId1=wporg_upgrade_v4) | [⚖️ Compare Lite vs. Pro](https://codetides.com/advanced-floating-content/lite-vs-pro/?subId1=wporg_compare_v4)
+[💳 Upgrade to Pro Now](https://www.codetides.com/products/advanced-floating-content/) | [⚖️ Compare Lite vs. Pro](https://codetides.com/advanced-floating-content/lite-vs-pro/?subId1=wporg_compare_v4)
 
 == Get Involved ==
 
